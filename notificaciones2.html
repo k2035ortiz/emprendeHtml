@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprende Link</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Aquí puedes añadir tu CSS adicional si es necesario */
+    </style>
+    <link rel="stylesheet" href="css/estilo2.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <span>☰</span>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="link/1.jpeg" alt="Emprende Link">
+            </div>
+            <nav>
+                <ul>
+                    <li><img src="link/5.png"><a href="#">Ayuda</a></li>
+                    <li><img src="link/6.gif"><a href="#">Notificaciones</a></li>
+                    <li><a href="#">Usuario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <aside class="sidebar" id="sidebar">
+        <div class="profile">
+            <img src="link/profile.jpg" alt="Profile">
+            <h2>Usuario</h2>
+        </div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Configuraciones</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="notifications">
+            <h2>Notificaciones</h2>
+            <div class="notification">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/270px-LEGO_logo.svg.png" alt="LEGO">
+                <div class="notification-content">
+                    <h3>LEGO</h3>
+                    <span class="time">3:15 PM</span>
+                    <p>A career in website design can involve the design, creation, and coding of a range of website types...</p>
+                </div>
+            </div>
+            <div class="notification">
+                <img src="https://i0.wp.com/www.elpoderdelasideas.com/wp-content/uploads/nuevo-logo-fanta-600x456.png?resize=600%2C456" alt="FANTA">
+                <div class="notification-content">
+                    <h3>FANTA</h3>
+                    <span class="time">4:32 PM</span>
+                    <p>A career in website design can involve the design, creation, and coding of a range of website types...</p>
+                </div>
+            </div>
+            <div class="notification">
+                <img src="https://cdn.worldvectorlogo.com/logos/sprite-8.svg" alt="Sprite">
+                <div class="notification-content">
+                    <h3>Sprite</h3>
+                    <span class="time">8:00 AM</span>
+                    <p>A career in website design can involve the design, creation, and coding of a range of website types...</p>
+                </div>
+            </div>
+            <div class="notification">
+                <img src="link/3.png" alt="Senaworks">
+                <div class="notification-content">
+                    <h3>Senaworks</h3>
+                    <span class="time">11:15 AM</span>
+                    <p>A career in website design can involve the design, creation, and coding of a range of website types...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <img src="link/4.png" alt="Emprende Link">
+                </div>
+                <p>Emprende Link busca facilitar la colaboración y el crecimiento empresarial al conectar de manera eficiente a emprendedores con grandes inversores, creando oportunidades para el desarrollo conjunto de soluciones innovadoras.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Legales</h3>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Acuerdos y términos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Nuestro correo:</h3>
+                <p><a href="mailto:emprendelink234@gmail.com">emprendelink234@gmail.com</a></p>
+            </div>
+            <div class="footer-section more">
+                <h3>Más de nosotros</h3>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Sobre Emprende Link</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Emprende Link - Copyright © 2024</p>
+            <div class="imagenes">
+                <img src="link/11.png" alt="Logo 1">
+                <img src="link/10.png" alt="Logo 2">
+                <img src="link/9.png" alt="Logo 3">
+                <img src="link/8.png" alt="Logo 3">
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
