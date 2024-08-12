@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notifi1</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      
-    </style>
-    <link rel="stylesheet" href="cssk/estilo1.css">
+    <title>Contact1</title>
+    <link rel="stylesheet" href="cssk/inverCont1.css">
+  
 </head>
 <body>
     <header>
@@ -17,9 +14,7 @@
         </div>
         <div class="container">
             <div class="logo">
-                
                 <img src="link/1.jpeg" alt="Emprende Link">
-                
             </div>
             <nav>
                 <ul>
@@ -34,61 +29,56 @@
         <div class="profile">
             <img src="link/12.png" alt="User">
             <br>
-            <span>Cristian Sebastian</span>
+            <span>Dayron Camilo</span>
             <br>
             <a href="mailto:esdp@gmail.com">esdp@gmail.com</a>
         </div>
         <ul>
-            <li><a href="#">Inicio</a></li>
             <li><a href="#">Perfil</a></li>
             <li><a href="#">Busqueda por categoría</a></li>
             <li><a href="#">Consultar Lista</a></li>
-            <li><a href="#">Mi emprendimiento</a></li>
-            <li><a href="#">Publicar Emprendimiento</a></li>
-            <li><a href="#">Lista de emprendimientos</a></li>
             <li><a href="#">Chat</a></li>
             <li><a href="#">Cerrar Sesión</a></li>
         </ul>
     </aside>
     <main>
-        <section class="notifications">
-            <h2>Notificaciones</h2>
-            <div class="notification">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/270px-LEGO_logo.svg.png" alt="LEGO">
-                <div class="notification-content">
-                    <h3>LEGO</h3>
-                    <span class="time">3:15 PM</span>
-                    <p>A career in website design can involve the design, creation, and coding of a range of website types. Other tasks will typically include liaising with clients and discussing website specifications, incorporating feedback, working on graphic design and image editing...</p>
+        <section class="contact">
+            <h2>Contactanos</h2>
+            <p>Necesitas ayuda puedes escribirnos a estos numeros:</p>
+            <p>Numeros: 3108596745 o 3108974856 o 31152867569</p>
+            <p>Tambien puedes contactarnos con este correo:</p>
+            <p>Correo: fafagfa@gmail.com</p>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">Como cambiar la contraseña</button>
+                    <div class="accordion-content">
+                        <p>1. Abre la app de Configuración del dispositivo y presiona Emprende link. Administrar tu Cuenta de nombre.</p>
+                        <p>2. En la parte superior, presiona Seguridad.</p>
+                        <p>3. En la sección "Acceso a Emprende link", presiona Contraseña. Es posible que debas acceder.</p>
+                        <p>4. Ingresa tu nueva contraseña y presiona Cambiar contraseña.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="notification">
-                <img src="https://i0.wp.com/www.elpoderdelasideas.com/wp-content/uploads/nuevo-logo-fanta-600x456.png?resize=600%2C456" alt="FANTA">
-                <div class="notification-content">
-                    <h3>FANTA</h3>
-                    <span class="time">4:32 PM</span>
-                    <p>A career in website design can involve the design, creation, and coding of a range of website types. Other tasks will typically include liaising with clients and discussing website specifications, incorporating feedback, working on graphic design and image editing...</p>
+                <div class="accordion-item">
+                    <button class="accordion-button">Como publicar un emprendimiento</button>
+                    <div class="accordion-content">
+                        <p>Detalles de cómo publicar un emprendimiento.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="notification">
-                <img src="https://cdn.worldvectorlogo.com/logos/sprite-8.svg" alt="Sprite">
-                <div class="notification-content">
-                    <h3>Sprite</h3>
-                    <span class="time">8:00 AM</span>
-                    <p>A career in website design can involve the design, creation, and coding of a range of website types. Other tasks will typically include liaising with clients and discussing website specifications, incorporating feedback, working on graphic design and image editing...</p>
+                <div class="accordion-item">
+                    <button class="accordion-button">Como mirar mi emprendimiento</button>
+                    <div class="accordion-content">
+                        <p>Detalles de cómo mirar mi emprendimiento.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="notification">
-                <img src="link/3.png" alt="Senaworks">
-                <div class="notification-content">
-                    <h3>Senaworks</h3>
-                    <span class="time">11:15 AM</span>
-                    <p>A career in website design can involve the design, creation, and coding of a range of website types. Other tasks will typically include liaising with clients and discussing website specifications, incorporating feedback, working on graphic design and image editing...</p>
+                <div class="accordion-item">
+                    <button class="accordion-button">Como mirar como calificaron mi emprendimiento o que comentaron</button>
+                    <div class="accordion-content">
+                        <p>Detalles de cómo mirar cómo calificaron mi emprendimiento o qué comentaron.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -218,30 +208,26 @@
               </ul>
         </div>
     </footer>
-
     <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-       this.classList.toggle('active');
-       document.querySelector('.sidebar').classList.toggle('active');
-   });
+         document.querySelector('.menu-toggle').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.sidebar').classList.toggle('active');
+    });
 
-       document.querySelectorAll('.accordion-button').forEach(button => {
-           button.addEventListener('click', () => {
-               const accordionContent = button.nextElementSibling;
-               button.classList.toggle('active');
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+                button.classList.toggle('active');
 
-               if (button.classList.contains('active')) {
-                   accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-               } else {
-                   accordionContent.style.maxHeight = 0;
-               }
-           });
-       });
+                if (button.classList.contains('active')) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                } else {
+                    accordionContent.style.maxHeight = 0;
+                }
+            });
+        });
 
-       
-   </script>
-
-
-
+        
+    </script>
 </body>
 </html>

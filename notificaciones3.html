@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifica 3</title>
-    <link rel="stylesheet" href="css/estilo3.css">
+    <title>notif3</title>
+    <link rel="stylesheet" href="cssk/estilo3.css">
 </head>
 <body>
+    
     <header>
         <div class="menu-toggle" id="menu-toggle">
             <span>☰</span>
@@ -24,72 +25,53 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="message">
-            <div class="message-header">
-                <h2>¡Mensaje!</h2>
-                <div class="message-controls">
-                    <span class="minimize">_</span>
-                    <span class="maximize">□</span>
-                    <span class="close">x</span>
+        <main>
+            <div class="message">
+                <div class="message-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/270px-LEGO_logo.svg.png" alt="LEGO Logo" class="sender-logo">
+                    <div class="sender-info">
+                        <strong>LEGO</strong>
+                        <span>3:15 PM</span>
+                    </div>
+                </div>
+                <div class="message-content">
+                    <h2>¡LEGO tiene novedades para ti!</h2>
+                    <p>¡Atención a todos los fanáticos de LEGO! ¿Preparados para nuevas aventuras creativas? LEGO tiene emocionantes noticias que compartir:</p>
+                    <h3>Nuevos sets:</h3>
+                    <ul>
+                        <li><strong>[Nombre del set 1]</strong>: Descripción breve del set.</li>
+                        <li><strong>[Nombre del set 2]</strong>: Descripción breve del set.</li>
+                        <li><strong>[Nombre del set 3]</strong>: Descripción breve del set.</li>
+                    </ul>
+                    <h3>Ofertas especiales:</h3>
+                    <ul>
+                        <li><strong>[Descripción de la oferta 1]</strong>: Detalles de la oferta.</li>
+                        <li><strong>[Descripción de la oferta 2]</strong>: Detalles de la oferta.</li>
+                        <li><strong>[Descripción de la oferta 3]</strong>: Detalles de la oferta.</li>
+                    </ul>
+                    <h3>Eventos y actividades:</h3>
+                    <ul>
+                        <li><strong>[Descripción del evento 1]</strong>: Fecha, hora, lugar y detalles del evento.</li>
+                        <li><strong>[Descripción del evento 2]</strong>: Fecha, hora, lugar y detalles del evento.</li>
+                        <li><strong>[Descripción del evento 3]</strong>: Fecha, hora, lugar y detalles del evento.</li>
+                    </ul>
+                    <p>No te pierdas estas increíbles novedades. Visita nuestra tienda o sitio web para más información.</p>
+                    <p>¡Te esperamos en el mundo de LEGO! #LEGO #JugarEsAprender #NuevasAventuras</p>
+                    <p>P.D: No olvides seguirnos en nuestras redes sociales para estar al día con las últimas noticias y sorpresas.</p>
+                    <p>[Enlace a redes sociales 1] [Enlace a redes sociales 2] [Enlace a redes sociales 3]</p>
+                </div>
+                <div class="message-actions">
+                    <button type="button" class="delete-btn" onclick="showNotification()">Eliminar</button>
+                    <button type="button" class="reply-btn">Responder</button>
                 </div>
             </div>
-            <form>
-                <div class="form-group">
-                    <label for="destinatario">Destinatario</label>
-                    <input type="email" id="destinatario" value="LegoLatam@gmail.com" readonly>
-                </div>
-                <div class="form-group">
-                    <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto" value="Solicitud de revisión de emprendimiento" readonly>
-                </div>
-                <textarea readonly>
-Fecha: 2024-04-07
-Lugar: Popayán, Cauca, Colombia
+            <div class="notification" id="notification">
+                <p><h2>¡Notificación eliminada exitosamente!</h2></p>
+                <button onclick="hideNotification()">Cerrar</button>
+            </div>
+        </main>
 
-Estimada/o [Nombre del representante de la empresa]:
-Me pongo en contacto con usted en nombre de [Nombre de su emprendimiento], un emprendimiento innovador que busca [Describa brevemente el objetivo de su emprendimiento].
-
-Con gran entusiasmo, le presentamos nuestro proyecto y solicitamos su valiosa atención para una revisión del mismo. Creemos que [Nombre de su emprendimiento] podría ser de gran interés para [Nombre de la empresa] debido a las siguientes razones:
-1. Propuesta de valor única: [Describa en qué se diferencia su emprendimiento de la competencia y por qué es valioso para los clientes/usuarios].
-2. Potencial de crecimiento: [Explique el potencial de crecimiento de su emprendimiento en términos de mercado, clientes e ingresos].
-3. Alineación con [Nombre de la empresa]: [Explique cómo su emprendimiento se alinea con los valores, objetivos o necesidades de la empresa].
-4. Equipo apasionado y experimentado: [Describa brevemente el equipo detrás de su emprendimiento y sus capacidades].
-
-
-Para facilitar su revisión, hemos adjuntado un resumen ejecutivo que describe en detalle nuestro emprendimiento, incluyendo:
-• Problema que resuelve
-• Solución propuesta
-• Modelo de negocio
-• Equipo
-• Tracción y logros
-• Planificación futura
-
-Agradecemos de antemano su tiempo y consideración. Estamos disponibles para responder cualquier pregunta que pueda tener sobre nuestro emprendimiento y para discutir las posibilidades de colaboración.
-
-Para concretar una breve llamada o reunión, puede contactarnos por correo electrónico a [Su dirección de correo electrónico] o por teléfono al [Su número de teléfono].
-
-
-Atentamente,
-[Su nombre]
-[Su cargo en el emprendimiento]
-[Nombre de su emprendimiento]
-[Sitio web de su emprendimiento]
-[Redes sociales de su emprendimiento]
-                </textarea>
-                
-            </form>
-        </section>
-        <div class="message-actions">
-          <button type="button" class="delete-btn" onclick="showNotification()">Enviar</button>
-          <button type="button" class="reply-btn">Adjuntar</button>
-      </div>
-  </div>
-  <div class="notification" id="notification">
-      <p><h2>¡Su respuesta ha sido enviada Exitosamente!</h2></p>
-      <button onclick="hideNotification()">Cerrar</button>
-  </div>
-    </main>
+       
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -219,7 +201,8 @@ Atentamente,
               </ul>
         </div>
     </footer>
-     <script>
+    
+    <script>
         function showNotification() {
             document.getElementById('notification').style.display = 'flex';
         }
@@ -228,6 +211,5 @@ Atentamente,
             document.getElementById('notification').style.display = 'none';
         }
     </script>
-    
 </body>
 </html>

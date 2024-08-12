@@ -2,45 +2,92 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 20px;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    color: #ffffff;
+ 
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.nav-item img {
+    width: 25px; /* Tamaño de los iconos */
+    height: 25px;
+    margin-right: 8px;
+}
+
+/* Estilo para los contenedores con borde */
+.bordered {
+    border: 1px solid #040404;
+    border-radius: 25px;
+    
+    
     
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
+
+.bordered a {
+    color: #040404;
+    font-weight: bold;
+    text-decoration: none;
+    
     
 }
-.menu-toggle span {
+
+.nav-item:active {
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer clic */
+    transition: background-color 0.1s ease, box-shadow 0.1s ease; /* Suaviza la transición */
+}
+
+
+
+.no-border img {
+    margin-right: 10px;
+}
+
+
+
+/* Para asegurarse de que todos los items estén en la misma fila */
+nav .nav-item:last-child {
+    border: 1px solid #040404;
+    border-radius: 25px;
+    padding: 3px 10px;
+}
+.Inversor{
+    color: #666666;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.menu-toggle img {
     font-size: 24px;
     cursor: pointer;
     
-}
-
-.logo img {
-    height: 80px;
-}
-
-.logo span {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-    
-}
-nav ul li img{
-    width: 20px;
-    height: 20px;
 }
 
 
@@ -97,75 +144,55 @@ nav ul li img{
 
 
 
-
-
-
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 35px;
-    padding: 0;
-    
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
 main {
-    width: 90%;
-    margin: 20px auto;
-}
-
-.notifications {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    
-
 }
 
-.notifications h2 {
-    
-    margin-bottom: 40px;
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 650px;
     
 }
 
-.notification {
+.review {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
 }
 
-.notification img {
-    height: 50px;
+.review img {
+    width: 80px;
+    height: 80px;
     margin-right: 20px;
+    border-radius: 10px;
 }
 
-.notification-content {
-    flex: 1;
-}
-
-.notification-content h3 {
+.review-content h3 {
     margin: 0;
+    font-size: 20px;
 }
 
-.notification-content .time {
-    color: #888;
-    font-size: 14px;
-    margin-bottom: 10px;
+.review-content p {
+    margin: 5px 0;
+    color: #666;
 }
 
-.notification-content p {
-    margin: 0;
-    color: #555;
+.stars span {
+    font-size: 20px;
+    color: #ccc;
 }
+
+.stars span.filled {
+    color: #ff0;
+}
+
+
+
 
 
 footer {
